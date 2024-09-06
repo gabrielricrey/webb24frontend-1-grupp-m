@@ -24,13 +24,23 @@ a{
     display: flex;
     gap: 2rem;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 20%;
+    border-right: 1px solid gray;
+}
+
+.navbar .logo{
+    margin-top: 3rem;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
 }
 
 .navbar .nav-links{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 2rem;
 }
@@ -39,13 +49,18 @@ a{
     display: flex;
     gap: 15px;
     align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar .nav-links a i{
+    font-size: 25px;
 }
 
 .navbar .nav-links a .profile{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
 .container .main{
@@ -57,43 +72,67 @@ a{
     height: 100%;
 }
 
-.container .main .footer{
-    height: 75px;
-    width: 75%;
-    bottom: 0;
+.container .main .header{
+    padding: 3rem 10rem;
+    width: 100%;
 }
 
-/* .container .main .mid{
-    width: 800px;
-    height: 800px;
-} */
+
+.container .main .header .content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.container .main .header .content .line{
+    width: 100%;
+    height: 1px;
+    border: 1px solid black;
+}
+
+.container .main .mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
 
 .container .main .mid .content{
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .container .main .mid .content .card{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
-    width: 300px;
-    height: 300px;
+    border: 1px solid rgb(174, 174, 174);
+    width: 45%;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
 }
 
-.container .main .mid .content .card .top{
+.container .main .mid .content .card .image-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border: 1px solid black;
+    /* border-bottom: 1px solid gray; */
+    background-color: rgba(255, 255, 255, .85);
+    position: absolute;
+    width: 100%;
 }
 
-.container .main .mid .content .card .top .left{
+.container .main .mid .content .card .image-header .left{
     display: flex;
     gap: 10px;
 }
 
-.container .main .mid .content .card .top .left .picture{
+.container .main .mid .content .card .image-header .left .picture{
     border: 1px solid black;
     width: 30px;
     height: 30px;
@@ -101,8 +140,58 @@ a{
     display: flex;
 }
 
-
-.container .main .mid .content .card .top .left .info{
+.container .main .mid .content .card .image-header .left .info{
     display: flex;
     flex-direction: column;
+}
+
+.container .main .mid .content .card .image-header .left .info h6{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container .main .mid .content .card .image-header .left .info p{
+    font-size: 14px;
+}
+
+.container .main .mid .content .card .image-header .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .main .mid .content .card .image-header .right button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.container .main .mid .content .card .image-header .right button i{
+    font-size: 1.5rem;
+}
+
+.container .main .mid .content .card .image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container .main .mid .content .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .main .footer{
+    height: 100px;
+    width: 100%;
+    border-top: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container .main .footer .links{
+    display: flex;
+    gap: 3rem;
 }
