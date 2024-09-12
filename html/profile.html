@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <!--Sidebar for desktop-->
+    <div class="sidebar">
+        <h1>Postagram</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="/explore.html"><i class="fa-solid fa-magnifying-glass"></i>Explore</a></li>
+                <li><a href=""><i class="fa-regular fa-heart"></i>Favorites</a></li>
+                <li><a href="/profile.html"><img src="/images/3.jpg" alt="">
+                        <p>Profile</p>
+                    </a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Header for mobile-->
+
+    <div class="mobile-header">
+        <ul>
+            <li>
+                <a href="/index.html">
+                    <h2>Postagram</h2>
+                </a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-plus"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main content!-->
+    <main class="main-content">
+        <header>
+            <h2>Profile</h2>
+        </header>
+        <section class="profile">
+            <form action="">
+                <div class="box">
+                    <div class="left">
+                        <label for="name">Name</label>
+                        <input type="text" name="firstname">
+                        <label for="name">Lastname</label>
+                        <input type="text" name="lastname">
+                        <label for="name">Email</label>
+                        <input type="email" name="email">
+                        <label for="name">Age</label>
+                        <input type="number" name="age">
+                    </div>
+                    <div class="right">
+                        <label for="about">About me</label>
+                        <textarea name="about" id="" rows="7"></textarea>
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="">
+                            <option value="-">-</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <!-- <input type="text" class="gender"> -->
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <p>2024 Postagram</p>
+            <!-- <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Explore</a></li>
+                <li><a href="">Favorites</a></li>
+                <li><a href="">Profile</a></li>
+            </ul> -->
+        </footer>
+    </main>
+
+
+    <!-- Mobile Nav!-->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="/index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="/explore.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+            <li><a href="/profile.html"><img src="/images/3.jpg" alt=""></a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
