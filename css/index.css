@@ -1,23 +1,28 @@
 .main-content .posts{
-    margin: 5rem 0 3rem 0;
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 5rem 0 3rem 0;
+}
+
+.main-content .posts .content{
+    width: 70%;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    /* padding: 2rem; */
     gap: 5px;
 }
 
-.main-content .posts .post{
+.main-content .posts .content .post{
     width: 49%;
     border: 1px solid lightgrey;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    height: 600px;
+    height: 500px;
 }
 
-.main-content .posts .post .post-header{
+.main-content .posts .content .post .post-header{
     width: 100%;
     position: absolute;
     display: flex;
@@ -27,13 +32,13 @@
     padding: 1rem;
 }
 
-.main-content .posts .post .post-header .post-info{
+.main-content .posts .content .post .post-header .post-info{
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.main-content .posts .post .post-header .post-info img{
+.main-content .posts .content .post .post-header .post-info img{
     width: 40px;
     height: 40px;
     object-fit: cover;
@@ -41,22 +46,22 @@
     border-radius: 50%;
 }
 
-.main-content .posts .post .post-header .post-info div h3{
+.main-content .posts .content .post .post-header .post-info div h3{
     font-weight: 200;
 }
 
-.main-content .posts .post .post-header .post-info div p{
+.main-content .posts .content .post .post-header .post-info div p{
     font-weight: 300;
 }
 
-.main-content .posts .post .post-header .like-btn{
+.main-content .posts .content .post .post-header .like-btn{
     border: none;
     font-size: 30px;
     background-color: transparent;
     cursor: pointer;
 }
 
-.main-content .posts .post img{
+.main-content .posts .content .post img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -74,7 +79,11 @@
         gap: 1px;
     }
 
-    .main-content .posts .post{
+    .main-content .posts .content{
+        width: 100%;
+    }
+
+    .main-content .posts .content .post{
         width: 100%;
         height: 500px;
     }
