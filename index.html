@@ -1,175 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="style.css">
+    <a href="Index.html">Home</a></li>
+    <a href="explore.html">Explore</a>
+    <a href="favorites.html">Favorites</a>
+    <a href="profile.html">Profile</a>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <header>
+        <h3>For you</h3>
+    </header>
 </head>
-
 <body>
-    <!--Sidebar for desktop-->
-    <div class="sidebar">
-        <h1>Postagram</h1>
-        <nav>
-            <ul>
-                <li><a href="/index.html"><i class="fa-solid fa-house"></i><p>Home</p></a></li>
-                <li><a href="/explore.html"><i class="fa-solid fa-magnifying-glass"></i><p>Explore</p></a></li>
-                <li><a href="/profile.html"><img src="/images/3.jpeg" alt=""><p>Profile</p></a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!--Header for mobile-->
-
-    <div class="mobile-header">
-        <div>
-            <h2>Postagram</h2>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">Postagram</a>
+            </div>
+            <div class="nav-links">
+                <a href=""><i class="fa-solid fa-house"></i>Home</a>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i>Explore</a>
+                <a href=""><i class="fa-regular fa-heart"></i>Favorites</a>
+                <a href=""><i class="profile"></i>Profile</a>
+            </div>
         </div>
-    </div>
 
-    <!-- Main content!-->
-    <main class="main-content">
-        <header>
-            <h2>For you</h2>
-        </header>
-        <section class="posts">
-            <div class="content">
-                <div class="post">
-                    <div class="post-header">
-                        <div class="post-info">
-                            <img src="/images/g10.jpeg" alt="User Avatar" class="avatar">
-                            <div>
-                                <h3>Phil</h3>
-                                <p>35232 likes</p>
-                            </div>
-                        </div>
-                        <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
+        <div class="content">
+        <main>
+        <hr>
+        <div class="post-list">
+            <div class="post-card">
+                <div class="post-header">
+                    <img src="https://iso.500px.com/wp-content/uploads/2018/03/500px_blog_spring_pictures.jpg" alt="Profile Image" class="profile-img">
+                    <div class="post-info">
+                        <p class="username">John Doe</p>
+                        <p class="likes">3532 likes</p>
                     </div>
-                    <img src="/images/1.jpeg" alt="Post Image" class="post-image">
+                    <span class="like-icon">♥</span>
                 </div>
-                <div class="post">
-                    <div class="post-header">
-                        <div class="post-info">
-                            <img src="/images/g3.jpeg" alt="User Avatar" class="avatar">
-                            <div>
-                                <h3>Xavier</h3>
-                                <p>12532 likes</p>
-                            </div>
-                        </div>
-                        <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
-                    </div>
-                    <img src="/images/2.jpeg" alt="Post Image" class="post-image">
-                </div>
-                <div class="post">
-                    <div class="post-header">
-                        <div class="post-info">
-                            <img src="/images/g6.jpeg" alt="User Avatar" class="avatar">
-                            <div>
-                                <h3>Cleo</h3>
-                                <p>98224 likes</p>
-                            </div>
-                        </div>
-                        <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
-                    </div>
-                    <img src="/images/3.jpeg" alt="Post Image" class="post-image">
-                </div>
-                <div class="post">
-                    <div class="post-header">
-                        <div class="post-info">
-                            <img src="/images/g7.jpeg" alt="User Avatar" class="avatar">
-                            <div>
-                                <h3>Francis</h3>
-                                <p>98136 likes</p>
-                            </div>
-                        </div>
-                        <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
-                    </div>
-                    <img src="/images/4.jpeg" alt="Post Image" class="post-image">
-                </div>
-                <div class="post">
-                    <div class="post-header">
-                        <div class="post-info">
-                            <img src="/images/g7.jpeg" alt="User Avatar" class="avatar">
-                            <div>
-                                <h3>James</h3>
-                                <p>66754 likes</p>
-                            </div>
-                        </div>
-                        <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
-                    </div>
-                    <img src="/images/2.jpeg" alt="Post Image" class="post-image">
-                </div>
-                <div class="post">
-                    <div class="post-header">
-                        <div class="post-info">
-                            <img src="/images/g2.jpeg" alt="User Avatar" class="avatar">
-                            <div>
-                                <h3>Melbourne</h3>
-                                <p>79662 likes</p>
-                            </div>
-                        </div>
-                        <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
-                    </div>
-                    <img src="/images/4.jpeg" alt="Post Image" class="post-image">
-                </div>
-                <div class="post">
-                    <div class="post-header">
-                        <div class="post-info">
-                            <img src="/images/g4.jpeg" alt="User Avatar" class="avatar">
-                            <div>
-                                <h3>Filippe</h3>
-                                <p>375433 likes</p>
-                            </div>
-                        </div>
-                        <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
-                    </div>
-                    <img src="/images/4.jpeg" alt="Post Image" class="post-image">
-                </div>
-                <div class="post">
-                    <div class="post-header">
-                        <div class="post-info">
-                            <img src="/images/g9.jpeg" alt="User Avatar" class="avatar">
-                            <div>
-                                <h3>Bernard</h3>
-                                <p>31232 likes</p>
-                            </div>
-                        </div>
-                        <button class="like-btn"><i class="fa-regular fa-heart"></i></button>
-                    </div>
-                    <img src="/images/g9.jpeg" alt="Post Image" class="post-image">
+                <img src="https://images.unsplash.com/photo-1532517891316-72a08e5c03a7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D" alt="Post Image" class="post-img">
+                <div class="post-caption">
+                    <p>In Mexico</p>
                 </div>
             </div>
-            <!-- Post Item -->
-            
-    
-            <!-- Repeat Post Items as needed -->
-        </section>
-        <footer>
-
-            <p>2024 Postagram</p>
-            <!-- <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Explore</a></li>
-                <li><a href="">Favorites</a></li>
-                <li><a href="">Profile</a></li>
-            </ul> -->
-        </footer>
+        </div>
     </main>
+</div>
+    <footer>
 
-
-    <!-- Mobile Nav!-->
-    <nav class="mobile-nav">
-        <ul>
-            <li><a href="/index.html"><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="/explore.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-            <li><a href="/profile.html"><img src="/images/3.jpeg" alt=""></a></li>
-        </ul>
-    </nav>
-
+    </footer>
 </body>
-
 </html>
