@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <a ref="stylesheet" href="style.css"></a>
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <a href="Index.html">Home</a></li>
+    <a href="explore.html">Explore</a>
+    <a href="favorites.html">Favorites</a>
+    <a href="profile.html">Profile</a>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <header>
+        <h3>For you</h3>
+    </header>
 </head>
 <body>
-
     <div class="container">
         <div class="navbar">
             <div class="logo">
@@ -19,13 +24,33 @@
                 <a href=""><i class="fa-solid fa-house"></i>Home</a>
                 <a href=""><i class="fa-solid fa-magnifying-glass"></i>Explore</a>
                 <a href=""><i class="fa-regular fa-heart"></i>Favorites</a>
-                <a href=""><div class="profile"></div>Profile</a>
+                <a href=""><i class="profile"></i>Profile</a>
             </div>
         </div>
+
         <div class="content">
-            <p>test</p>
-            <div class="footer"></div>
+        <main>
+        <hr>
+        <div class="post-list">
+            <div class="post-card">
+                <div class="post-header">
+                    <img src="https://iso.500px.com/wp-content/uploads/2018/03/500px_blog_spring_pictures.jpg" alt="Profile Image" class="profile-img">
+                    <div class="post-info">
+                        <p class="username">John Doe</p>
+                        <p class="likes">3532 likes</p>
+                    </div>
+                    <span class="like-icon">♥</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1532517891316-72a08e5c03a7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D" alt="Post Image" class="post-img">
+                <div class="post-caption">
+                    <p>In Mexico</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
+</div>
+    <footer>
+
+    </footer>
 </body>
 </html>
