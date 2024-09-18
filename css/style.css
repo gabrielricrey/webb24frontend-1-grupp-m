@@ -88,7 +88,6 @@ li{
     background-color: #fff;
     display: none;
     padding: 0 1rem;
-    /* height: 4rem; */
 }
 
 .mobile-header div{
@@ -128,6 +127,10 @@ li{
     font-weight: 300;
 }
 
+.main-content header h2::first-letter{
+    font-weight: 400;
+}
+
 /* Footer! */
 
 .main-content footer{
@@ -148,19 +151,11 @@ li{
     font-weight: 200;
 }
 
-/* .main-content footer ul{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-} */
-
 .mobile-nav{
     padding: 1rem;
     height: 4rem;
     position: fixed;
     bottom: 0;
-    /* display: flex; */
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
