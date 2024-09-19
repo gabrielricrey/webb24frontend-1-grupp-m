@@ -1,73 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <a href="Index.html">Home</a></li>
-    <a href="explore.html">Explore</a>
-    <a href="favorites.html">Favorites</a>
-    <a href="profile.html">Profile</a>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-<body>
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="#">Postagram</a>
-            </div>
-            <div class="nav-links">
-                <a href=""><i class="fa-solid fa-house"></i>Home</a>
-                <a href=""><i class="fa-solid fa-magnifying-glass"></i>Explore</a>
-                <a href=""><i class="fa-regular fa-heart"></i>Favorites</a>
-                <a href=""><i class="profile"></i>Profile</a>
-            </div>
-        </div>
-        <div class="form-container">
-            <form>
-              <h4>My profile</h4>
 
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-              </div>
-        
-              <div class="form-group">
-                <label for="lastname">Lastname</label>
-                <input type="text" id="lastname" name="lastname" required>
-              </div>
-        
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-              </div>
-        
-              <div class="form-group">
-                <label for="age">Age</label>
-                <input type="number" id="age" name="age" min="18" required>
-              </div>
-        
-              <div class="form-group">
-                <label for="about">About Me</label>
-                <textarea id="about" name="about" rows="1" required></textarea>
-              </div>
-        
-              <div class="form-group">
-                <label for="gender">Gender</label>
-                <select id="gender" name="gender" required>
-                            <option value="" disabled selected>Select your gender</option>
+<body>
+    <!--Sidebar for desktop-->
+    <div class="sidebar">
+        <h1>Postagram</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="explore.html"><i class="fa-solid fa-magnifying-glass"></i>Explore</a></li>
+                <li><a href="profile.html"><img src="images/3.jpeg" alt="">
+                        <p>Profile</p>
+                    </a></li>
+            </ul
+        </nav>
+    </div>
+
+    <!--Header for mobile-->
+
+    <div class="mobile-header">
+        <div>
+            <h2>Postagram</h2>
+        </div>
+    </div>
+
+    <!-- Main content!-->
+    <main class="main-content">
+        <header>
+            <h2>Profile</h2>
+        </header>
+        <section class="profile">
+            <form action="">
+                <div class="box">
+                    <div class="left">
+                        <label for="name">Name</label>
+                        <input type="text" name="firstname" required>
+                        <label for="name">Lastname</label>
+                        <input type="text" name="lastname" required>
+                        <label for="name">Email</label>
+                        <input type="email" name="email">
+                        <label for="name">Age</label>
+                        <input type="number" name="age">
+                    </div>
+                    <div class="right">
+                        <label for="about">About me</label>
+                        <textarea name="about" id="" rows="7"></textarea>
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="">
+                            <option value="-">-</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
-                            <option value="other">Other</option>
                         </select>
-              </div>
-              <div class="form-group">
-                <button type="submit" class="submit-button">Submit</button>
-              </div>
+                        <!-- <input type="text" class="gender"> -->
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
             </form>
-          </div>
-        </body>
-        </html>
+        </section>
+        <footer>
+            <p>2024 Postagram</p>
+        </footer>
+    </main>
 
 
+    <!-- Mobile Nav!-->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="explore.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="profile.html"><img src="images/3.jpeg" alt=""></a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
